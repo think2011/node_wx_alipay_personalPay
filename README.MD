@@ -7,7 +7,7 @@ nodeJS版个人支付免签系统
 
 实现原理： 监听支付宝客户端推送信息，最安全的一种方式；
 
-后台Demo地址: pay.yio.me 账号密码 admin
+后台Demo地址: http://pay.yio.me 账号密码 admin
 
 支付Demo地址: http://pay.yio.me/#/goods/DwnNGCW4VLk1CjemIiUqf
 
