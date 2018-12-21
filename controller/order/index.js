@@ -135,7 +135,8 @@ order.find_all = async (page,num,where) => {
     return order.findAndCount({
         offset: page * num - num,
         limit: parseInt(num),
-        where: where
+        where: where,
+        attributes: { exclude: ['email'] }
     })
 }
 
