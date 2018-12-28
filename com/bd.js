@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./config').db;
 const redis = require('redis');
-const redisConfid = require('./config').redisConfid;
+const redisConfig = require('./config').redisConfig;
 const moment = require('moment');
 
 const sequelize = new Sequelize(db.db, db.name, db.password, {
@@ -23,7 +23,7 @@ sequelize.authenticate().then(res => {
 })
 
 // 定义redis
-const client = redis.createClient(redisConfid); 
+const client = redis.createClient(redisConfig); 
 
 module.exports = {
   sequelize,
