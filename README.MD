@@ -54,7 +54,7 @@ nodeJS版个人支付免签系统
 
 安装方式
 
-    !!! 依赖nodeJS + mysql + redis 环境
+    !!! 依赖nodeJS（必须） + mysql（必须） + redis 环境 （Api版本没有限制下单频率非必须Redis）
 
     1.下载全部源码；
 
