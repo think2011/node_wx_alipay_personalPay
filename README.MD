@@ -53,7 +53,9 @@ nodeJS版个人支付免签系统
 
 2.不要使用HOOK的方式，会被风控（就是你们想要的订单备注，自动生成定额二维码，此方法已经被和谐了，见第一条，请勿使用），本项目使用的是独立App监听“系统”状态栏通知，安全无风险;
 
-3.所有定额二维码都无法唤醒最新支付宝支付,目前已经无法通过手机浏览器打开支付宝付款页面;
+3.所有定额二维码都无法唤醒最新支付宝支付,目前已经无法通过手机浏览器打开支付宝App付款;
+
+4.所有二清的平台决不可使用;
 
 ##定制订单处理
 
@@ -71,13 +73,15 @@ nodeJS版个人支付免签系统
        
          sign  // 客户端加密后的密匙  加密方式 md5(md5(apiurl) + secretkey));
          
-         apiurl // 客户端填写的Api地址 务必填写 http(s)://你的服务器地址/addons/pay/ 必须反斜线结尾;
+         apiurl // 客户端填写的Api地址 务必填写 http(s)://你的服务器地址/addons/pay/ 必须"/"结尾;
          
         服务端处理参数：
         
-          secretkey 是服务端配置的加密secretkey，客户端需要和服务端的一致，一致即配置成功;
+          secretkey 是服务端配置的加密secretkey，需要和客户端填写的secretkey一致;
+         
+          判断逻辑如下 
           
-          if (sign == md5(md5(apiurl) + secretkey))
+          if (sign == md5(md5(apiurl) + secretkey)) // 当客户端加密的sign 和服务器加密的 sign一直则通过，加密方式 md5(md5(apiurl) + secretkey)
          
         响应值
          
@@ -111,7 +115,7 @@ nodeJS版个人支付免签系统
 
           服务端处理参数：
 
-            secretkey 是服务端配置的加密secretkey，客户端需要和服务端的一致，一致即配置成功;
+            secretkey 是服务端配置的加密secretkey，客户端填写的secretkey需要和服务端的secretkey一致，一致即配置成功;
 
             if (sign == md5(md5(price + type) + secretkey)) // 后面就可以处理你的订单状态了
 
@@ -141,7 +145,7 @@ nodeJS版个人支付免签系统
 
     2.修改 /com目录中 config.js 和 email.js 文件；
 
-    3.在根目录中运行 npm install 安装依赖；
+    3.在项目根目录中运行 npm install 安装依赖；
 
     4.在根目录中运行 node app.js 默认端口80，没有错误信息,访问服务器地址即可访问，如果80端口被占用，请开启其他端口或使用Nginx转发;
 
