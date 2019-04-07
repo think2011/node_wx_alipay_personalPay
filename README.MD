@@ -1,7 +1,7 @@
 nodeJS版个人支付免签系统
 技术栈 Koa2 + Vue + Mysql + Redis 
 
-# Api 版本出炉了 强烈推荐使用 git地址 https://github.com/yioMe/nodejs_wx_aipay_api 
+## Api 版本出炉了 强烈推荐使用
 
 1. 解决支付宝二维码生成次数限制，无需手动上传二维码,实时回调收款通知，并且支持h5唤醒支付；
 
@@ -10,6 +10,8 @@ nodeJS版个人支付免签系统
 3. 后台代码开源，你可以随时下载服务端最新的代码!
  
 4. 已经购买客户端的可以直接使用Api版；
+
+5. 新的git地址 https://github.com/yioMe/nodejs_wx_aipay_api 
 
 -------------------------------------------
 
