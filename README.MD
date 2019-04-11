@@ -23,6 +23,8 @@ nodeJS版个人支付免签系统
 
 实现原理： 当收到支付宝、微信、实时收款信息，客户端会实时通知服务器收款金额和方式，服务器收到有效期订单金额后处理订单状态，使用随机减免的方式区分订单（5分钟订单有效期内有相同金额的订单会随机减免0.01 - 0.10的方式用来区分订单）;
 
+### demo演示是基于普通版 https://github.com/yioMe/node_wx_alipay_personalPay 项目，支付宝必须上传二维码，不支持h5唤醒！API版无需上传支付宝二维码，支持h5唤醒支付 https://github.com/yioMe/nodejs_wx_aipay_api api版没有演示地址，请自行搭建或观看视频教程！
+
 后台Demo地址: http://pay.yio.me 账号密码 admin
 
 支付Demo地址: http://pay.yio.me/#/goods/DwnNGCW4VLk1CjemIiUqf
