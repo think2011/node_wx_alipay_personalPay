@@ -140,7 +140,7 @@ nodeJS版个人支付免签系统
     
     4.解压前端源代码压缩包（vue.js开发），修改 src/main.js 里面的 Vue.prototype.$staticUrl = ‘七牛云加速域名’ ，就是你对象存储的空间绑定的域名；
     
-    5.打开前端源代码根目录执行 npm run build 打包后的文件在dist目录，将dist目录所有文件放入www文件目录;
+    5.打开前端源代码根目录执行 npm install 安装依赖 然后执行 npm run build 打包后的文件在dist目录，将dist目录所有文件放入www文件目录;
 
     6.在根目录中使用管理员权限运行 node app.js 默认端口80，没有错误信息,访问服务器地址即可访问，如果80端口被占用，请开启其他端口或使用Nginx转发;
 
