@@ -214,11 +214,9 @@ nodeJS版个人支付免签系统
 
 答： 可以
 
-最后：
+## 商业版免签
 
-    客户端需赞助地址
-    
-    http://pay.yio.me/#/goods/74ct1zBzZBW8YGFBKe-Yf
+  http://pays.yio.me  请使用邮箱注册；
  
    [1]: http://static.yio.me/1544963117843.png
 
