@@ -216,7 +216,7 @@ nodeJS版个人支付免签系统
 
 ## 商业版免签
 
-  http://pays.yio.me  请使用邮箱注册；
+  http://pays.yio.me  请使用邮箱注册,源码出售；
  
    [1]: http://static.yio.me/1544963117843.png
 
