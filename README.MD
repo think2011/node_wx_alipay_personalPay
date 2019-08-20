@@ -23,11 +23,11 @@ nodeJS版个人支付免签系统
 
 实现原理： 当收到支付宝、微信、实时收款信息，客户端会实时通知服务器收款金额和方式，服务器收到有效期订单金额后处理订单状态，使用随机减免的方式区分订单（5分钟订单有效期内有相同金额的订单会随机减免0.01 - 0.10的方式用来区分订单）;
 
-后台Demo地址: http://pay.yio.me:3001 账号密码 admin
+后台Demo地址: http://pay.yio.me 账号密码 admin
 
-支付Demo地址: http://pay.yio.me:3001/#/goods/DwnNGCW4VLk1CjemIiUqf
+支付Demo地址: http://pay.yio.me/#/goods/DwnNGCW4VLk1CjemIiUqf
 
-客户端地址： http://pay.yio.me:3001/#/goods/74ct1zBzZBW8YGFBKe-Yf
+客户端地址： http://pay.yio.me/#/goods/74ct1zBzZBW8YGFBKe-Yf
 
 ----------------------------------------
 
